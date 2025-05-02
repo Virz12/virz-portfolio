@@ -17,47 +17,53 @@ onBeforeUnmount(() => {
 
 const NavList = [
   {
-    title: "Homo",
+    title: "Home",
     link: "/"
   },
   {
     title: "About",
-    link: "/about"
+    link: "/"
   },
   {
     title: "Project",
-    link: "/project"
+    link: "/"
   },
   {
     title: "Contact Me",
-    link: "/contact-me",
+    link: "/",
   },
 ];
+
+const isOpen = useNavBar()
 </script>
 
 <template>
   <header>
-    <div
-      :class="['transition-all duration-300 fixed top-0 w-full z-50', isScrolled ? 'navbar-active' : 'navbar-inactive']">
-      <div class="container mx-auto flex items-center justify-between">
-        <h1 class="text-3xl font-bold text-black">Virz</h1>
-        <nav>
+    <div :class="['transition-300 fixed top-0 w-full z-50', isScrolled ? 'navbar-active' : 'navbar-inactive']">
+      <div class="container px-4 mx-auto flex items-center justify-between gap-4">
+        <h1 class="text-3xl font-bold text-black grow lg:grow-0">Virz</h1>
+        <nav class="hidden lg:block">
           <ul class="flex space-x-4">
             <li v-for="(item, index) in NavList" :key="index">
               <NuxtLink :to="{ path: item.link }"
                 class="font-medium flex flex-col gap-3 max-h-[25px] overflow-hidden group">
-                <span class="transition-all duration-300 group-hover:-translate-y-6 group-hover:-skew-6">
-                  {{ item.title }}
+                <span class="transition-300 nav-link group-hover:-translate-y-6">
+                  {{ item.title.toUpperCase() }}
                 </span>
-                <span
-                  class="transition-all duration-300 group-hover:-translate-y-9 group-hover:-skew-6 text-indigo-600">
-                  {{ item.title }}
+                <span class="transition-300 nav-link group-hover:-translate-y-9 text-primary">
+                  {{ item.title.toUpperCase() }}
                 </span>
               </NuxtLink>
             </li>
           </ul>
         </nav>
-        <Button class="cursor-pointer">Contact Me</Button>
+        <Button variant="outline" class="cursor-pointer bg-gray-100 duration-300 hover:bg-primary hover:text-white">
+          DOWNLOAD CV
+        </Button>
+        <div class="cursor-pointer lg:hidden flex items-center justify-center" @click="isOpen = true">
+          <Icon name="solar:hamburger-menu-linear" size="2.5em" class="text-black" />
+        </div>
+        <Sidebar :NavList />
       </div>
     </div>
   </header>

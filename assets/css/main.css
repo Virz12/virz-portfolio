@@ -92,7 +92,7 @@
 
   --popover-foreground: oklch(0.145 0 0);
 
-  --primary: oklch(0.205 0 0);
+  --primary: #0a7075;
 
   --primary-foreground: oklch(0.985 0 0);
 
@@ -219,14 +219,19 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-gray-100 text-foreground;
   }
   .navbar-active {
-    @apply py-6 bg-background border-b;
+    @apply py-6 bg-gray-100 border-b;
   }
-  
   .navbar-inactive {
-    @apply py-8 bg-transparent;
+    @apply py-10 bg-transparent border-b-0;
+  }
+  .transition-300 {
+    @apply transition-all duration-300 ease-in-out;
+  }
+  .nav-link {
+    @apply group-hover:-skew-4;
   }
 }
 
