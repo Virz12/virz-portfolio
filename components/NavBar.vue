@@ -20,8 +20,8 @@ const { isOpen, navList } = useNavBar()
 
 <template>
   <header>
-    <div :class="['transition-300 fixed top-0 w-full z-20', isScrolled ? 'navbar-active' : 'navbar-inactive']">
-      <div class="container px-4 mx-auto flex items-center justify-between gap-4 lg:gap-8">
+    <div :class="['transition-300 fixed top-0 w-full z-30', isScrolled ? 'navbar-active' : 'navbar-inactive']">
+      <div class="container flex items-center justify-between gap-4 lg:gap-8">
         <h1 class="text-3xl font-bold text-black grow">Virz</h1>
         <nav class="hidden lg:block">
           <ul class="flex space-x-4">
@@ -47,6 +47,6 @@ const { isOpen, navList } = useNavBar()
         </div>
       </div>
     </div>
-    <div :class="['bg-black/30 top-0 right-0 left-0 bottom-0 z-30', isOpen ? 'fixed' : 'none']"></div>
+    <div :class="['bg-black/30 top-0 right-0 left-0 bottom-0 z-40', isOpen ? 'fixed' : 'none']"></div>
   </header>
 </template>

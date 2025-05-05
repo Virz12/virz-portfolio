@@ -11,7 +11,7 @@ const { isOpen, navList } = useNavBar()
     <nav class="flex flex-col ml-8 justify-center h-1/2">
       <ul class="space-y-2">
         <li v-for="(item, index) in navList" :key="index">
-          <NuxtLink :to="{ path: item.link }" class="text-lg font-medium min-w-full block">
+          <NuxtLink :to="{ path: item.link }" class="text-lg font-medium min-w-full block" v-gsap.animateText>
             {{ item.title.toUpperCase() }}
           </NuxtLink>
         </li>

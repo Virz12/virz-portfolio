@@ -96,7 +96,8 @@
 
   --primary-foreground: oklch(0.985 0 0);
 
-  --secondary: oklch(0.97 0 0);
+  /* --secondary: oklch(0.97 0 0); */
+  --secondary: #1b6144;
 
   --secondary-foreground: oklch(0.205 0 0);
 
@@ -221,20 +222,11 @@
   body {
     @apply bg-gray-100 text-foreground;
   }
-  .navbar-active {
-    @apply py-6 bg-gray-100 border-b border-gray-300;
-  }
-  .navbar-inactive {
-    @apply py-10 bg-transparent border-b-0;
-  }
-  .transition-300 {
-    @apply transition-all duration-300 ease-in-out;
-  }
-  .nav-link {
-    @apply group-hover:-skew-4;
-  }
-  .flex-center {
-    @apply flex items-center justify-center;
+}
+
+@layer utilities {
+  .container {
+    @apply  px-4 mx-auto;
   }
 }
 
@@ -249,5 +241,25 @@
 
   .box-shadow-layer:hover {
     box-shadow: #328E6E66 5px 5px, #328E6E4d 10px 10px, #328E6E33 15px 15px, #328E6E1a 20px 20px, #328E6E0d 25px 25px;
+  }
+
+  .navbar-active {
+    @apply py-6 bg-gray-100 border-b border-gray-300;
+  }
+
+  .navbar-inactive {
+    @apply py-10 bg-transparent border-b-0;
+  }
+
+  .transition-300 {
+    @apply transition-all duration-300 ease-in-out;
+  }
+
+  .nav-link {
+    @apply group-hover:-skew-4;
+  }
+
+  .flex-center {
+    @apply flex items-center justify-center;
   }
 }

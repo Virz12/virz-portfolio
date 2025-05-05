@@ -1,14 +1,6 @@
 import tailwindcss from "@tailwindcss/vite";
 
 export default defineNuxtConfig({
-  app: {
-    pageTransition: { 
-      name: 'page', mode: 'out-in',
-    },
-    layoutTransition: { 
-      name: 'layout', mode: 'out-in',
-    }
-  },
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
   css: ['~/assets/css/main.css'],
@@ -21,7 +13,8 @@ export default defineNuxtConfig({
     '@nuxt/eslint',
     '@nuxt/icon',
     '@nuxt/image',
-    'shadcn-nuxt'
+    'shadcn-nuxt',
+    'v-gsap-nuxt'
   ],
   shadcn: {
     prefix: '',
@@ -30,5 +23,10 @@ export default defineNuxtConfig({
      * @default "./components/ui"
      */
     componentDir: './components/ui'
+  },
+  vgsap: {
+    presets: [],
+    breakpoint: 768,
+    composable: false
   }
 })
