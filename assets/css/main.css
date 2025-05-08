@@ -1,7 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 @import "tailwindcss";
 @import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
+
+@theme {
+  --font-Dm-Sans: 'DM Sans', sans-serif;
+}
 
 @theme inline {
 
@@ -92,12 +97,11 @@
 
   --popover-foreground: oklch(0.145 0 0);
 
-  --primary: #328E6E;
+  --primary: #44b58e;
 
   --primary-foreground: oklch(0.985 0 0);
 
-  /* --secondary: oklch(0.97 0 0); */
-  --secondary: #1b6144;
+  --secondary: #008071;
 
   --secondary-foreground: oklch(0.205 0 0);
 
@@ -226,7 +230,14 @@
 
 @layer utilities {
   .container {
-    @apply  px-4 mx-auto;
+    @apply px-4 mx-auto;
+
+    @media (width >= 48rem /* 768px */) {
+      @apply px-8 /* 768px */;
+    }
+    @media (width >= 80rem /* 1280px */) {
+      @apply px-24 /* 1280px */;
+    }
   }
 }
 
@@ -234,13 +245,13 @@
   .bg-polka {
     background-color: #f3f4f6;
     opacity: 1;
-    background-image: radial-gradient(#328e6e59 1px, transparent 1px), radial-gradient(#328e6e57 1px, #f3f4f6 1px);
+    background-image: radial-gradient(#44b58e59 1px, transparent 1px), radial-gradient(#44b58e57 1px, #f3f4f6 1px);
     background-size: 40px 40px;
     background-position: 0 0, 20px 20px;
   }
 
   .box-shadow-layer:hover {
-    box-shadow: #328E6E66 5px 5px, #328E6E4d 10px 10px, #328E6E33 15px 15px, #328E6E1a 20px 20px, #328E6E0d 25px 25px;
+    box-shadow: #44b58e66 5px 5px, #44b58e4d 10px 10px, #44b58e33 15px 15px, #44b58e1a 20px 20px, #44b58e0d 25px 25px;
   }
 
   .navbar-active {

@@ -13,11 +13,12 @@ const props = defineProps({
         <span class="text-xl md:text-4xl font-medium text-black">
           HI THERE, I'M
         </span>
-        <h1 class="text-8xl md:text-[152px] font-bold text-stroke" v-gsap.whileHover.to="{ color: '#328E6E' }">
+        <h1 class="text-8xl md:text-[152px] font-bold text-stroke hover:drop-shadow-xl/75 drop-shadow-primary"
+          v-gsap.whileHover.to="{ color: '#44b58e' }">
           Virz
         </h1>
         <p class="text-lg md:text-2xl font-medium text-black/60 text-clip text-center px-8">
-          An Enthusiast <span class="text-black font-bold">Web Developer</span> to
+          An Enthusiast <span class="text-black font-bold">Frontend Developer</span> to
           creating a user-friendly experiences.
         </p>
       </div>
@@ -35,7 +36,7 @@ const props = defineProps({
 
 <style scoped>
 .text-stroke {
-  -webkit-text-stroke: 1px #328E6E;
+  -webkit-text-stroke: 1px #44b58e;
   color: #f3f4f6;
 }
 </style>

@@ -26,7 +26,7 @@ const { isOpen, navList } = useNavBar()
         <nav class="hidden lg:block">
           <ul class="flex space-x-4">
             <li v-for="(item, index) in navList" :key="index">
-              <NuxtLink :to="{ path: item.link }"
+              <NuxtLink :to="{ path: '', hash: item.link }"
                 class="font-medium flex flex-col gap-3 max-h-[25px] overflow-hidden group">
                 <span class="transition-300 nav-link group-hover:-translate-y-6">
                   {{ item.title.toUpperCase() }}

@@ -4,19 +4,19 @@ export const useNavBar = () => {
   const navList = [
     {
       title: "Home",
-      link: "/"
+      link: "#home"
     },
     {
       title: "About",
-      link: "/"
+      link: "#about"
     },
     {
       title: "Project",
-      link: "/"
+      link: "#"
     },
     {
       title: "Contact Me",
-      link: "/",
+      link: "#",
     },
   ];
 
