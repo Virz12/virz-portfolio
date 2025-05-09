@@ -239,6 +239,10 @@
       @apply px-24 /* 1280px */;
     }
   }
+
+  .text-header {
+    @apply text-4xl font-bold;
+  }
 }
 
 @layer components {

@@ -11,12 +11,12 @@ export const useNavBar = () => {
       link: "#about"
     },
     {
-      title: "Project",
-      link: "#"
+      title: "Projects",
+      link: "#projects"
     },
     {
       title: "Contact Me",
-      link: "#",
+      link: "#contact",
     },
   ];
 

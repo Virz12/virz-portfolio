@@ -1,6 +1,7 @@
 <template>
-  <section class="bg-primary min-h-[80vh] lg:min-h-[70vh] py-20 lg:py-40">
-    <div class="container md:h-100 flex flex-col lg:flex-row items-center lg:justify-between gap-18">
+  <section class="bg-primary lg:min-h-[70vh] py-20">
+    <!-- Image -->
+    <div class="container flex flex-col lg:flex-row items-center lg:justify-between gap-18">
       <div class="relative mx-4" v-gsap.mobile.delay-1600.stagger.whenVisible.once.from="{ opacity: 0, x: -30 }"
         v-gsap.desktop.delay-500.stagger.whenVisible.once.reversible.from="{ opacity: 0, x: -50 }">
         <!-- Square Skew -->
@@ -14,9 +15,11 @@
           v-gsap.parallax.faster></span>
         <NuxtImg src="/images/virz.jpg" alt="Virz Image" sizes="sm:100% md:400px" class="relative z-10 rounded-xl" />
       </div>
+
+      <!-- Description -->
       <div class="w-full lg:w-1/2 text-white lg:mb-16"
         v-gsap.whenVisible.once.reversible.stagger.from='{ opacity: 0, y: 50, stagger: 0.4 }'>
-        <h2 class="text-4xl font-bold">ABOUT ME</h2>
+        <h2 class="text-header">ABOUT ME</h2>
         <p class="text-xl mt-4">
           I'm a Frontend Developer with a passion for creating beautiful and functional web applications. I have
           experience in HTML, CSS, JavaScript, and various frontend frameworks such as React.js and Vue.js. I'm
