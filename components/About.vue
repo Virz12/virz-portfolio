@@ -17,10 +17,10 @@
       </div>
 
       <!-- Description -->
-      <div class="w-full lg:w-1/2 text-white lg:mb-16"
+      <div class="w-full lg:w-1/2 lg:mb-16"
         v-gsap.whenVisible.once.reversible.stagger.from='{ opacity: 0, y: 50, stagger: 0.4 }'>
-        <h2 class="text-header">ABOUT ME</h2>
-        <p class="text-xl mt-4">
+        <h2 class="text-header text-white">ABOUT ME</h2>
+        <p class="text-xl mt-4 text-white">
           I'm a Frontend Developer with a passion for creating beautiful and functional web applications. I have
           experience in HTML, CSS, JavaScript, and various frontend frameworks such as React.js and Vue.js. I'm
           always eager to learn new

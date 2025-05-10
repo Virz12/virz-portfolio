@@ -10,23 +10,14 @@ const projects = [
     image: '',
     link: ''
   },
-  {
-    title: 'Not Yet',
-    image: '',
-    link: ''
-  },
-  {
-    title: 'Not Yet',
-    image: '',
-    link: ''
-  }
 ]
 </script>
 
 <template>
   <section>
-    <div class="container py-20">
-      <h2 class="text-header mb-8" v-gsap.whenVisible.once.reversible.from="{ opacity: 0, y: 50 }">Works & Projects</h2>
+    <div class="container pt-20">
+      <h2 class="text-header mb-8 uppercase" v-gsap.whenVisible.once.reversible.from="{ opacity: 0, y: 50 }">Works &
+        Projects</h2>
       <!-- Project -->
       <div class="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-8">
         <div v-for="(item, index) in projects" :key="index"
@@ -41,6 +32,7 @@ const projects = [
           </div>
         </div>
       </div>
+      <div class="border-b border-primary pb-20"></div>
     </div>
   </section>
 </template>

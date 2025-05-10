@@ -121,7 +121,7 @@
 
   --input: oklch(0.922 0 0);
 
-  --ring: oklch(0.708 0 0);
+  --ring: var(--primary);
 
   --chart-1: oklch(0.646 0.222 41.116);
 
@@ -224,7 +224,7 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-gray-100 text-foreground;
+    @apply bg-gray-100 text-foreground selection:bg-primary selection:text-primary-foreground;
   }
 }
 
@@ -233,11 +233,16 @@
     @apply px-4 mx-auto;
 
     @media (width >= 48rem /* 768px */) {
-      @apply px-8 /* 768px */;
+      @apply px-8;
     }
     @media (width >= 80rem /* 1280px */) {
-      @apply px-24 /* 1280px */;
+      @apply px-24;
     }
+  }
+
+  .text-white::selection {
+    background-color: white; /* green-500 */
+    color: var(--primary);
   }
 
   .text-header {

@@ -16,13 +16,13 @@ const props = defineProps({
         v-gsap.whileHover.to="{ color: '#44b58e' }">
         Virz
       </h1>
-      <p class="text-lg md:text-2xl font-medium text-black/60 text-clip text-center px-8">
-        An Enthusiast <span class="text-black font-bold">Frontend Developer</span> to
-        creating a user-friendly experiences.
+      <p class="text-lg md:text-2xl font-medium text-black/60 text-clip text-center px-8">An enthusiastic
+        <span class="text-black font-bold">Frontend Developer </span>
+        to create a user-friendly experiences.
       </p>
     </div>
     <div class="flex gap-6 md:gap-8" v-gsap.delay-1200.from="{ opacity: 0, y: 50 }">
-      <div class="size-12 md:size-16 transition-300 rounded-lg bg-primary box-shadow-layer"
+      <div class="size-12 md:size-16 duration-300 rounded-lg bg-primary box-shadow-layer" v-gsap.magnetic.weaker
         v-for="(item, index) in medsos" :key="index">
         <NuxtLink :to="item.link" class="flex-center size-full p-2" target="_blank">
           <Icon :name="item.icon" size="2.5em" class="text-white transition-300" />
