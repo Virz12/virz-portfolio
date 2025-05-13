@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+@import url('satoshi.css');
 @import "tailwindcss";
 @import "tw-animate-css";
 
@@ -6,7 +6,7 @@
 @custom-variant hover (&:hover);
 
 @theme {
-  --font-Dm-Sans: 'DM Sans', sans-serif;
+  --font-Dm-Sans: 'Satoshi-Variable', sans-serif;
 }
 
 @theme inline {
@@ -244,10 +244,6 @@
   .text-white::selection {
     background-color: white; /* green-500 */
     color: var(--primary);
-  }
-
-  .text-header {
-    @apply text-4xl font-bold;
   }
 }
 

@@ -22,7 +22,7 @@ const { isOpen, navList } = useNavBar()
   <header>
     <div :class="['transition-300 fixed top-0 w-full z-30', isScrolled ? 'navbar-active' : 'navbar-inactive']">
       <div class="container flex items-center justify-between gap-4 lg:gap-8">
-        <h1 class="text-3xl font-bold text-black grow">Virz</h1>
+        <h1 class="text-4xl font-bold text-black grow">Virz</h1>
         <nav class="hidden lg:block">
           <ul class="flex space-x-4">
             <li v-for="(item, index) in navList" :key="index">
@@ -39,7 +39,7 @@ const { isOpen, navList } = useNavBar()
           </ul>
         </nav>
         <Button variant="outline"
-          class="cursor-pointer bg-gray-100 duration-300 shadow-primary hover:border-primary hover:shadow-lg hover:bg-linear-to-bl from-primary to-green-600 hover:text-white">
+          class="cursor-pointer bg-gray-100 hover:shadow-primary hover:border-primary hover:shadow-lg hover:bg-linear-to-bl from-primary to-green-600 hover:text-white">
           DOWNLOAD CV
         </Button>
         <div class="cursor-pointer lg:hidden flex items-center justify-center" @click="isOpen = true">

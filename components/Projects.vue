@@ -1,8 +1,8 @@
 <script setup>
 const projects = [
   {
-    title: 'Not Yet',
-    image: '',
+    title: 'WhatsApp Channel Integration',
+    image: '/images/test.avif',
     link: ''
   },
   {
@@ -16,21 +16,22 @@ const projects = [
 <template>
   <section>
     <div class="container pt-20">
-      <h2 class="text-header mb-8 uppercase" v-gsap.whenVisible.once.reversible.from="{ opacity: 0, y: 50 }">Works &
-        Projects</h2>
+      <h2 class="text-4xl md:text-5xl font-bold text-center uppercase mb-12"
+        v-gsap.whenVisible.once.reversible.from="{ opacity: 0, y: 50 }">
+        Works & Projects
+      </h2>
       <!-- Project -->
-      <div class="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-8">
-        <div v-for="(item, index) in projects" :key="index"
+      <div class="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-6">
+        <NuxtLink :to="item.link" v-for="(item, index) in projects" :key="index"
           v-gsap.whenVisible.once.reversible.from='{ opacity: 0, y: 50 }'
-          class="border rounded-xl relative flex-center flex-col cursor-pointer bg-white/10 group hover:bg-neutral-400/10 basis-1/3">
-          <Icon name="healthicons:not-ok" size="18em"
-            class="group-hover:scale-105 hover:blur-sm transition-300 text-gray-600/20" />
-          <div class="absolute z-10 bottom-0 w-full px-8 py-4">
+          class="border rounded-xl relative cursor-pointer group basis-1/3 after:content-[''] after:absolute after:top-0 after:left-0 after:w-full after:h-full after:rounded-xl after:bg-black after:opacity-0 after:duration-300 hover:after:opacity-15">
+          <NuxtImg :src="item.image" size="100%" class="rounded-xl group-hover:blur-[2px]"></NuxtImg>
+          <div class="absolute z-10 bottom-0 w-full p-4">
             <h3
-              class="text-3xl font-bold transition-300 uppercase -mx-2.5 opacity-0 invisible group-hover:m-0 group-hover:opacity-100 group-hover:visible">
+              class="text-2xl text-white font-black transition-300 -my-2.5 uppercase opacity-0 invisible group-hover:m-0 group-hover:opacity-100 group-hover:visible">
               {{ item.title }}</h3>
           </div>
-        </div>
+        </NuxtLink>
       </div>
       <div class="border-b border-primary pb-20"></div>
     </div>
