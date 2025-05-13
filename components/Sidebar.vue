@@ -4,7 +4,7 @@ const { isOpen, navList } = useNavBar()
 
 <template>
   <div
-    :class="['fixed z-50 transition-300 top-0 right-0 w-3/4 sm:w-1/2 h-screen border-l border-gray-400 bg-primary text-white', isOpen ? '-translate-x-[0%]' : 'translate-x-[100%]']">
+    :class="['fixed z-50 transition-300 top-0 right-0 w-3/4 sm:w-1/2 h-screen border-l bg-linear-to-bl from-primary to-green-600 text-white', isOpen ? '-translate-x-[0%]' : 'translate-x-[100%]']">
     <div class="relative" @click="isOpen = false">
       <Icon name="charm:cross" size="2.5em" class="cursor-pointer text-white absolute right-6 top-6" />
     </div>

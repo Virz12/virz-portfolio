@@ -26,7 +26,7 @@ const { isOpen, navList } = useNavBar()
         <nav class="hidden lg:block">
           <ul class="flex space-x-4">
             <li v-for="(item, index) in navList" :key="index">
-              <NuxtLink :to="{ path: '', hash: item.link }"
+              <NuxtLink :to="{ hash: item.link }"
                 class="font-medium flex flex-col gap-3 max-h-[25px] overflow-hidden group">
                 <span class="transition-300 nav-link group-hover:-translate-y-6">
                   {{ item.title.toUpperCase() }}
@@ -39,7 +39,7 @@ const { isOpen, navList } = useNavBar()
           </ul>
         </nav>
         <Button variant="outline"
-          class="cursor-pointer bg-gray-100 duration-300 shadow-primary hover:border-primary hover:shadow-lg hover:bg-primary hover:text-white">
+          class="cursor-pointer bg-gray-100 duration-300 shadow-primary hover:border-primary hover:shadow-lg hover:bg-linear-to-bl from-primary to-green-600 hover:text-white">
           DOWNLOAD CV
         </Button>
         <div class="cursor-pointer lg:hidden flex items-center justify-center" @click="isOpen = true">
@@ -47,6 +47,7 @@ const { isOpen, navList } = useNavBar()
         </div>
       </div>
     </div>
-    <div :class="['bg-black/30 top-0 right-0 left-0 bottom-0 z-40', isOpen ? 'fixed' : 'none']"></div>
+    <div :class="['bg-black/30 top-0 right-0 left-0 bottom-0 z-40', isOpen ? 'fixed' : 'none']" @click="isOpen = false">
+    </div>
   </header>
 </template>

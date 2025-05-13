@@ -29,7 +29,8 @@ const myContact = [
           v-gsap.delay-500.whenVisible.once.reversible.stagger.from="{ opacity: 0, y: 50 }">
           <div class="flex md:flex-col gap-8 md:gap-4 lg:gap-8 lg:flex-row items-center"
             v-for="(item, index) in myContact" :key="index">
-            <div class="bg-primary size-12 md:size-14 rounded-full flex-center transition-300 p-2 hover:scale-105">
+            <div
+              class="bg-linear-to-bl from-primary to-green-600 size-12 md:size-14 rounded-full flex-center transition-300 p-2 hover:scale-105">
               <Icon :name="item.icon" size="1.5em" class="text-white" />
             </div>
             <div class="md:text-center lg:text-start">

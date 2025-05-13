@@ -17,12 +17,12 @@ const medsos = [
 
 <template>
   <Sidebar />
-  <main class="bg-gray-100 overflow-hidden">
+  <main class="bg-linear-to-bl from-gray-100 to-stone-100 overflow-hidden">
     <!-- Hero Section -->
     <Hero :medsos id="home" />
     <!-- About Section -->
     <About id="about" class="scroll-mt-[80px]" />
-    <!-- Project Seciton -->
+    <!-- Project Section -->
     <Projects id="projects" class="scroll-mt-[80px]" />
     <!-- Contact Section -->
     <Contact id="contact" class="scroll-mt-[80px]" />

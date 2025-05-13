@@ -3,6 +3,7 @@
 @import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
+@custom-variant hover (&:hover);
 
 @theme {
   --font-Dm-Sans: 'DM Sans', sans-serif;
@@ -101,7 +102,7 @@
 
   --primary-foreground: oklch(0.985 0 0);
 
-  --secondary: #008071;
+  --secondary: #298552;
 
   --secondary-foreground: oklch(0.205 0 0);
 
@@ -252,7 +253,7 @@
 
 @layer components {
   .bg-polka {
-    background-color: #f3f4f6;
+    background-color: oklch(0.967 0.003 264.542);
     opacity: 1;
     background-image: radial-gradient(#44b58e59 1px, transparent 1px), radial-gradient(#44b58e57 1px, #f3f4f6 1px);
     background-size: 40px 40px;
