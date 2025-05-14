@@ -1,6 +1,13 @@
 <script setup>
 import { ref, onMounted, onBeforeUnmount } from 'vue'
 
+const openCV = () => {
+  const link = document.createElement('a')
+  link.href = './files/VirgiPutraRiyadi_CV.pdf'
+  link.download = 'Virz_CV.pdf'
+  link.click()
+}
+
 const isScrolled = ref(false)
 
 const handleScroll = () => {
@@ -38,7 +45,7 @@ const { isOpen, navList } = useNavBar()
             </li>
           </ul>
         </nav>
-        <Button variant="outline"
+        <Button variant="outline" @click="openCV"
           class="cursor-pointer bg-gray-100 hover:shadow-primary hover:border-primary hover:shadow-lg hover:bg-linear-to-bl from-primary to-green-600 hover:text-white">
           DOWNLOAD CV
         </Button>
