@@ -36,7 +36,7 @@ const myContact = [
             </div>
             <div class="md:text-center lg:text-start">
               <h2 class="text-2xl font-bold mb-2">{{ item.title }}</h2>
-              <p class="text-gray-600 text-md leading-4">
+              <p class="text-gray-600 leading-4">
                 {{ item.description }}
               </p>
             </div>
