@@ -21,7 +21,7 @@ export default defineNuxtConfig({
 
   // SEO Config
   site: {
-    url: 'https://virz-nuxtjs.vercel.app/',
+    url: 'https://virz-portfolio.vercel.app',
     name: 'Virz - Portfolio | Web Developer',
     description: 'A portfolio website for Virz, an enthusiast web developer with Vue & Nuxt. Contact me for collab and work together.',
     defaultLocale: 'en'
@@ -38,7 +38,7 @@ export default defineNuxtConfig({
 
       // Contact & Social Information
       email: 'virgiriyadi2404@gmail.com',
-      url: 'virz-nuxtjs.vercel.app/',
+      url: 'virz-portfolio.vercel.app',
       sameAs: [
         'https://github.com/Virz12',
         'https://www.instagram.com/isthiszain_',
