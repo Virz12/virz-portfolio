@@ -29,7 +29,8 @@ const frameworksList = [...frameworks, ...frameworks];
         <span
           class="absolute z-10 -bottom-12 -right-10 size-40 border-8 border-l-green-700 border-b-green-700 border-r-secondary border-t-secondary rotate-6"
           v-gsap.parallax.faster></span>
-        <NuxtImg src="/images/virgi.jpg" alt="Virz Image" sizes="sm:100% md:400px" class="relative z-10 rounded-xl" />
+        <NuxtImg src="/images/profile-photo.jpg" alt="Virz Image" sizes="sm:100% md:400px"
+          class="relative z-10 rounded-xl" />
       </div>
 
       <!-- Description -->

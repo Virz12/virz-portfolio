@@ -10,7 +10,7 @@ const medsos = [
   },
   {
     icon: 'ic:baseline-facebook',
-    link: 'https://www.facebook.com/isthis.zain/'
+    link: 'https://www.facebook.com/isthis.zain'
   },
 ]
 </script>
@@ -28,5 +28,3 @@ const medsos = [
     <Contact id="contact" class="scroll-mt-[80px]" />
   </main>
 </template>
-
-<style scoped></style>
