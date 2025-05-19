@@ -1,75 +1,19 @@
-# Nuxt Minimal Starter
+# 🌐 Personal Portfolio
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+This is my personal developer portfolio built using [Nuxt 3](https://nuxt.com/), styled with [Tailwind CSS](https://tailwindcss.com/), and enhanced with modern UI components from [shadcn/vue](https://shadcn-vue.com/).
 
-## Setup
+## 🚀 Tech Stack
 
-Make sure to install dependencies:
+- **Nuxt 3** — Vue 3 framework with full SSR support
+- **Tailwind CSS** — Utility-first CSS framework
+- **shadcn/vue** — Modern, accessible UI components for vue
+- **TypeScript** — For simple API function
+- **Vite** — Lightning-fast bundler and dev server
 
-```bash
-# npm
-npm install
+## 📂 Features
 
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+- 💼 Project showcase section
+- 🧑‍💻 About Me and Skills
+- 📫 Contact form
+- 🖼️ Responsive design
+- ⚡ Fast and SEO-friendly
