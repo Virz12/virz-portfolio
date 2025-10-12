@@ -20,6 +20,13 @@ export default defineNuxtConfig({
   ],
 
   // SEO Config
+  app: {
+    head: {
+      meta: [
+        { name: 'google-site-verification', content: 'UqZzQsaDHxZPgUQGJL8dbCTJmLZc9UJHKbeCrCED2VY'}
+      ]
+    }
+  },
   site: {
     url: 'https://virz-portfolio.vercel.app',
     name: 'Virz - Portfolio | Web Developer',
